@@ -1,1 +1,15 @@
 npx create-nx-workspace --preset nest --name jobber --appName jobber-auth
+npm i prisma --save-dev
+npm i @prisma/client --save
+
+
+nx generate-types jobber-auth
+
+npm i @nestjs/graphql @nestjs/apollo @apollo/server graphql --save
+
+nx g library libs/nest
+
+nx g resolver users
+
+npm i --save-dev husky lint-staged --force
+npx husky init
