@@ -1,4 +1,10 @@
 npx create-nx-workspace --preset nest --name jobber --appName jobber-auth
+
+npm uninstall @nestjs/common @nestjs/core @nestjs/platform-express @nestjs/testing
+
+npm install @nestjs/common@latest @nestjs/core@latest @nestjs/platform-express@latest @nestjs/testing@latest
+
+
 npm i prisma --save-dev
 npm i @prisma/client --save
 
@@ -13,3 +19,7 @@ nx g resolver users
 
 npm i --save-dev husky lint-staged --force
 npx husky init
+
+nx g application jobber-jobs
+
+npm i --save @golevelup/nestjs-discovery
